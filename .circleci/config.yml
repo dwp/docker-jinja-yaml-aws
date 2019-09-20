@@ -69,12 +69,6 @@ workflows:
   build-and-deploy:
     jobs:
     - build
-    - publish-latest:
-        requires:
-        - build
-        filters:
-          branches:
-            only: master
     - publish-github-release:
         requires:
         - build
