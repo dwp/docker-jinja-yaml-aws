@@ -5,5 +5,5 @@ ignore:
   SNYK-ALPINE311-JQ-544397:
     - '*':
         reason: required in container and risk accepted, ticket DW-3574
-        expires: 2020-10-04T00:00:00.000Z
+        expires: 2020-07-04T00:00:00.000Z
 patch: {}
