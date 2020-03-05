@@ -41,6 +41,7 @@ jobs:
           target-file: Dockerfile
           monitor-on-build: false
           project: '${CIRCLE_PROJECT_REPONAME}/pr-docker'
+          fail-on-issues: false
 
   snyk-master:
     executor: docker-publisher
@@ -56,6 +57,7 @@ jobs:
           severity-threshold: high
           target-file: Dockerfile
           project: '${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BRANCH}-docker'
+          fail-on-issues: false
 
   publish-latest:
     executor: docker-publisher
