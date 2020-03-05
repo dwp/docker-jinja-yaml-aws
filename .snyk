@@ -1,0 +1,9 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-ALPINE311-JQ-544397:
+    - '*':
+        reason: required in container and risk accepted, ticket DW-3574
+        expires: 2020-10-04T00:00:00.000Z
+patch: {}
